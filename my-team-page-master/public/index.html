@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="../public/output.css">
+    <title>Devchallenge</title>
+    <style>
+        body {
+            position: absolute;
+            background-color: #FAFAFA;
+            overflow-x: hidden;
+        }
+        
+        #secondrow {
+            position: relative;
+            margin-top: 90px;
+            height: 70.5em;
+            width: 56em;
+            row-gap: -30em;
+            grid-template-rows: 31.5em;
+        }
+        
+        .font-poppins {
+            margin-right: 20px;
+        }
+        /* #weareteam {
+            display: flex;
+        } */
+        
+        .fonter {
+            font-family: 'Poppins';
+            font-style: normal;
+            /* margin: 40px; */
+            padding-top: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
+        }
+        
+        #text-sm3 {
+            font-family: serif;
+            writing-mode: vertical-rl;
+            text-orientation: inherit;
+            font-size: x-small;
+            margin-left: 25em;
+            /* margin-right: 30px; */
+            margin-top: -70em;
+            transform: translate(-50%, -620%) rotateY(20deg);
+        }
+        
+        #text-sm2 {
+            writing-mode: vertical-lr;
+            text-orientation: inherit;
+            font-size: x-small;
+            margin-left: 25em;
+            margin-top: -70em;
+            transform: translate(-50%, -440%) rotateY(0deg);
+        }
+        
+        #text-sm1 {
+            writing-mode: vertical-rl;
+            text-orientation: inherit;
+            font-size: x-small;
+            margin-left: 25em;
+            margin-top: -70em;
+            transform: translate(-50%, -330%) rotate(0deg);
+            transform-origin: 0 0;
+            /* transform: rotate(90deg); */
+        }
+        
+        #text-sm4 {
+            writing-mode: vertical-rl;
+            text-orientation: inherit;
+            font-size: x-small;
+            margin-left: 25em;
+            margin-top: -70em;
+            transform: translate(-50%, -470%) rotateY(20deg);
+        }
+        
+        #text-sm5 {
+            writing-mode: vertical-rl;
+            text-orientation: inherit;
+            font-size: x-small;
+            margin-left: 25em;
+            margin-top: -70em;
+            transform: translate(-50%, -530%) rotateY(20deg);
+        }
+        
+        #text-sm6 {
+            writing-mode: vertical-rl;
+            text-orientation: inherit;
+            font-size: x-small;
+            margin-left: 25em;
+            margin-top: -70em;
+            transform: translate(-50%, -530%) rotateY(20deg);
+        }
+        
+        footer {
+            position: absolute;
+            width: 287px;
+            height: 19px;
+            left: 290px;
+            top: 1100px;
+            font-family: 'Montserrat';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #A9A9A9;
+        }
+        
+        @media screen and (max-width: 640px) {
+            #creative {
+                position: absolute;
+                width: 278px;
+                height: 47px;
+                left: 12px;
+                top: 100px;
+                font-family: 'PT Serif';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 48px;
+                letter-spacing: -0.045em;
+                color: #333333
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+            #whoweare {
+                position: absolute;
+                width: 117px;
+                height: 27px;
+                left: -40px;
+                top: 115px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 27px;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+            #weareteam {
+                position: absolute;
+                width: 333px;
+                height: 87px;
+                left: -45px;
+                top: 193px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+            #secondrow {
+                display: grid;
+                position: absolute;
+                top: 220px;
+                left: 12px;
+                grid-template-columns: repeat(2, 2fr);
+                max-width: 0px;
+                gap: 0px;
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+            img {
+                height: 300px;
+                /* height: fit-content; */
+                width: 200px;
+                /* padding: 8px; */
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+            footer {
+                position: absolute;
+                width: 287px;
+                height: 17px;
+                left: 46px;
+                top: 1300px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+                text-align: center;
+                color: #A9A9A9;
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+            .container {
+                margin-top: -30px;
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            #text-sm1 {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                font-size: x-small;
+                margin-left: 25em;
+                margin-top: -70em;
+                transform: translate(-280%, -160%) rotateY(-10deg);
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            #text-sm2 {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                font-size: x-small;
+                margin-left: 25em;
+                margin-top: -70em;
+                transform: translate(-310%, -185%) rotateY(-10deg);
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            #text-sm3 {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                font-size: x-small;
+                margin-left: 25em;
+                margin-top: -70em;
+                transform: translate(-280%, -275%) rotateY(-10deg);
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            #text-sm4 {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                font-size: x-small;
+                margin-left: 25em;
+                margin-top: -70em;
+                transform: translate(-260%, -214%) rotateY(-10deg);
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            #text-sm5 {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                font-size: x-small;
+                margin-left: 25em;
+                margin-top: -70em;
+                transform: translate(-280%, -250%) rotateY(20deg);
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            #text-sm6 {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                font-size: x-small;
+                margin-left: 25em;
+                margin-top: -70em;
+                transform: translate(-280%, -250%) rotateY(-10deg);
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            .fonter {
+                font-family: 'Poppins';
+                font-style: normal;
+                /* margin: 40px; */
+                padding: 15px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 27px;
+                color: #000000;
+            }
+        }
+        
+        @media screen and (max-width:640px) {
+            body {
+                overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+
+
+<body class=" flex flex-col  m-4 p-40 px-60 absolute">
+
+    <div class="grid grid-cols-2 ">
+        <div class="font-serif text-3xl font-bold -tracking-normal leading-loose -mt-20" id="creative">
+            The creative crew
+        </div>
+        <div class="-mt-20 col-span-1">
+            <span class="font-poppins text-lg font-bold leading-loose -tracking-normal mx-16" id="whoweare">WHO WE ARE</span><br>
+            <span class="font-poppins text-lg font-light leading-relaxed -tracking-normal flex mx-16" id="weareteam">
+                We are team of creatively diverse.driven.<br>innovative individuals working in various
+                locations from the world.</span>
+        </div>
+    </div>
+    <!-- <div class=" justify-content-center grid grid-cols-3 gap-20 gap-y-px " id="secondrow"> -->
+    <div class=" justify-content-center grid grid-cols-3 gap-x-24 gap-y-0 " id="secondrow">
+        <div>
+            <img src=" ../photo1.png " alt="img1 " />
+            <span class="fonter">Bill Bahoney</span>
+            <!-- <span class="text-sm font-light" id="text-sm">PRODUCT OWNER</span> -->
+            <span class="text-sm font-light font-serif" id="text-sm1">PRODUCTOWNER</span>
+        </div>
+        <div class="my-28">
+            <img src=" ../photo2.png " alt="img2 ">
+            <span class="fonter">Saba Cabrera</span>
+            <span class="text-sm  font-light font-serif" id="text-sm2">ARTDIRECTOR</span>
+        </div>
+        <div class="container">
+            <img src="../photo3.png " alt="img3 ">
+            <span class="fonter">Shae Le</span>
+            <span class="text-sm font-light font-serif" id="text-sm3">TECHLEAD</span>
+        </div>
+        <div>
+            <img src=" ../photo4.png " alt="img4 ">
+            <span class="fonter" id="fonter4">Skylah Lu</span>
+            <span class="text-sm font-light font-serif" id="text-sm4">UXDESIGNER</span>
+        </div class="container">
+        <div class="container my-32">
+            <img src=" ../photo5.png " alt="img5 ">
+            <span class="fonter">Griff Richards</span>
+            <span class="text-sm font-light font-serif" id="text-sm5">DEVELOPER</span>
+        </div>
+        <div>
+            <img src=" ../photo6.png " alt="img6 ">
+            <span class="fonter">Stan John</span>
+            <span class="text-sm font-light font-serif" id="text-sm6">DEVELOPER</span>
+        </div>
+        <div>
+            <footer>
+                created by orjichimaprince-devchallenges io</footer>
+        </div>
+
+    </div>
+</body>

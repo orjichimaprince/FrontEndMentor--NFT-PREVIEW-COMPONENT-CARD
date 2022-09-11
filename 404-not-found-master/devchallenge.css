@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+.btn-primary {
+    @apply btn-primary inline-block px-6 py-2.5 bg-blue-600font-medium text-xs leading-tight hover: focus: bg-blue-700 focus: shadow-lg focus: outline-none
+}
+
+@tailwind utilities;
