@@ -8,15 +8,10 @@ hamburger.addEventListener('click', () => {
     hamburger.style.display = 'none'
 
 })
+
 closeMenu.addEventListener('click', () => {
     navList.style.display = 'none'
     closeMenu.style.display = 'none'
-    hamburger.style.display = 'block'
-
-})
-navList.addEventListener('click', () => {
-    // navList.style.display = 'none'
-    closeMenu.style.display = 'block'
     hamburger.style.display = 'block'
 
 })
